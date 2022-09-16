@@ -3,8 +3,9 @@ from tkinter import filedialog
 from tkinter import font
 from tkinter import colorchooser
 import os, sys
-# import win32print
-# import win32api
+
+import win32print
+import win32api
 
 root = Tk()
 root.title('Python - TextPad!')
@@ -374,3 +375,15 @@ color_text_button.grid(row=0, column=4, padx=5, pady=5)
 
 
 root.mainloop()
+
+
+# Instructions:
+# 1. To use win32 api ie pywin32 you should run
+
+#     >> pip install pywin32
+# and after that, you should run
+
+#     >> python Scripts/pywin32_postinstall.py -install
+
+# 2. To run win32 print run
+#     >> pip install win32printing
